@@ -26,6 +26,21 @@ public class Harvester {
 		System.out.println();
 
 		// logik
+		
+		
+	if (reihestart!=1) {
+		for (int i = reihestart-1; i <= reihen; i--) {
+			if ((i % 2) == 1) {
+				for (int as = 0; as < spalten; as++) {
+					System.out.print((feld[i][as]) + " ");
+				}
+			} else if ((i % 2) == 0) {
+				for (int sa = spalten+1; sa >= 0; sa--) {
+					System.out.print((feld[i][sa]) + " ");
+				}
+			}
+		}
+	}		
 		if (spaltestart == 1) {
 			for (int i = 0; i < reihen; i++) {
 				if ((i % 2) == 0) {
